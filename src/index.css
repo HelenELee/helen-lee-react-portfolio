@@ -65,7 +65,11 @@ ul li {
 ul li:hover{
   transform:scale(1.5);
 }
-
+/*
+button:hover{
+  transform:scale(1.5);
+}
+*/
 
 /*
 ul li{
