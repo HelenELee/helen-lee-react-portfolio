@@ -7,8 +7,8 @@ function NavTabs({ currentPage, handlePageChange }) {
     <header className="header-color h-200 p-10 m-0 flex flex-row flex-end flex-nowrap items-end">
 
     
-    <ul className="ml-auto">
-      <li className="mr-10">
+    <ul className="ml-auto list-none">
+      <li className="mr-10 inline-block">
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
@@ -19,7 +19,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           About Me
         </a>
       </li>
-      <li className="mr-10">
+      <li className="mr-10 inline-block">
         <a
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
@@ -29,7 +29,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           Portfolio
         </a>
       </li>
-      <li className="mr-10">
+      <li className="mr-10 inline-block">
         <a
           href="#contact"
           onClick={() => handlePageChange('Contact')}
@@ -39,7 +39,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           Contact
         </a>
       </li>
-      <li className="mr-10">
+      <li className="mr-10 inline-block">
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
