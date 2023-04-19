@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from "../Project";
-import  {projectData} from '../../project-data';
+import  {projectData} from '../data/project-data';
 
 export default function Portfolio() {
   return (
@@ -9,7 +9,7 @@ export default function Portfolio() {
       {
         projectData.map((proj) => {
           console.log(proj.title);
-          return <Project id={proj.id} title={proj.title} img={proj.img} app={proj.app} git={proj.github} desc={proj.desc}/>
+          return <Project id={proj.id} title={proj.title} img={proj.img} app={proj.app} github={proj.github} desc={proj.desc}/>
         })
       }
       
