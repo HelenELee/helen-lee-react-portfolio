@@ -1,8 +1,31 @@
 import React, { useState } from 'react';
 
+// Here we import a helper function that will check if the email is valid
+import { validateEmail } from '../utils/helpers';
+import { addConfetti } from '../utils/confetti.js';
+
+const inputStyle=`appearance-none rounded-none 
+relative w-3/4 px-3 py-2 border border-gray-300 
+placeholder-gray-500 text-gray-900 rounded 
+focus:outline-none focus:ring-indigo-500 
+focus:border-indigo-500 focus:z-10 sm:text-sm`;
+
+const buttonStyle=`group relative flex justify-center
+my-5 py-2 px-4 border border-transparent text-sm font-medium
+rounded-md text-white bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2
+focus:ring-red-500`;
+
+const buttonStyleDisabled=`group relative flex justify-center
+my-5 py-2 px-4 border border-transparent text-sm font-medium
+rounded-md text-white bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2
+focus:ring-red-500`;
+
+const errorMessage=`text-red-500`;
+
 function Form() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleInputChange = evt => {
     //setName(evt.target.value);
@@ -16,15 +39,24 @@ function Form() {
     } else if (inputType === 'userName') {
       setName(inputValue);
     } else {
-      //setMessage(inputValue);
-      alert("message");
+      setMessage(inputValue);
+    }
   }
-}
+
+  const handleSubmit = () => {
+    setSubmitClicked(true);
+    addConfetti();
+  }
 
   const isValidName = name !== "";
-  const isValidEmail = email !== "";
+  const isValidEmail = email !== "" && validateEmail(email);
+  const isValidMessage = message !== "";
+  const isValidButton = isValidName && isValidEmail && isValidMessage;
+
   const [enteredName, setEnteredName] = useState(false);
   const [enteredEmail, setEnteredEmail] = useState(false);
+  const [enteredMessage, setEnteredMessage] = useState(false);
+  const [submitClicked, setSubmitClicked] = useState(false);
 
   return (
 
@@ -38,15 +70,11 @@ function Form() {
           value={name}
           onChange={handleInputChange}
           type="text"
-         // placeholder="username"
+          placeholder="Enter your name"
          onBlur={() => setEnteredName(true)}
-         className="appearance-none rounded-none relative
-         w-3/4 px-3 py-2 border border-gray-300
-         placeholder-gray-500 text-gray-900 rounded
-         focus:outline-none focus:ring-indigo-500
-         focus:border-indigo-500 focus:z-10 sm:text-sm"
+         className={inputStyle}
         />
-        {enteredName ? (isValidName ? "✅" : "❌") : null}
+        {enteredName ? (isValidName ? "" : <p className={errorMessage}>❌ Please enter your name.</p>) : null}
         <label htmlFor="email" className="block">Email:</label>
         <input
           id="email"
@@ -54,33 +82,25 @@ function Form() {
           onChange={handleInputChange}
           type="email"
           value={email}
-         // placeholder="email"
+          placeholder="Enter a valid email address"
           onBlur={() => setEnteredEmail(true)}
-          className="appearance-none rounded-none relative
-          w-3/4 px-3 py-2 border border-gray-300
-          placeholder-gray-500 text-gray-900 rounded
-          focus:outline-none focus:ring-indigo-500
-          focus:border-indigo-500 focus:z-10 sm:text-sm"
+          className={inputStyle}
         />
-        {enteredEmail ? (isValidEmail ? "✅" : "❌") : null}
+        {enteredEmail ? (isValidEmail ? "" : <p className={errorMessage}>❌ Please enter a valid email address.</p>) : null}
         <label htmlFor="message" className="block">Message:</label>
         <input
-          //value={password}
+          value={message}
           name="message"
-         // onChange={handleInputChange}
+          onChange={handleInputChange}
           type="text"
           placeholder="Enter your message"
-         //onBlur={handleOnBlur}
-         className="appearance-none rounded-none relative
-         w-3/4 px-3 py-2 border border-gray-300
-         placeholder-gray-500 text-gray-900 rounded
-         focus:outline-none focus:ring-yellow-500
-         focus:border-yellow-500 focus:z-10 sm:text-sm h-20"
-        />
-        <button type="button" className="group relative flex justify-center
-                my-5 py-2 px-4 border border-transparent text-sm font-medium
-                rounded-md text-white bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2
-                focus:ring-indigo-500">Submit</button>
+          onBlur={() => setEnteredMessage(true)}
+          className={inputStyle}
+        /> 
+        {enteredMessage ? (isValidMessage ? "" : <p className={errorMessage}>❌ Please enter your message.</p>) : null}
+        <button type="button" disabled={!isValidButton} className={isValidButton ? buttonStyle : buttonStyleDisabled} onClick={handleSubmit}>Submit</button>
+        
+        <p id="apologies" className={!submitClicked ? "hidden" : "apology"}>Apologies this part of my portfolio is not working yet! To contact me please email me at <a href="mailto:helenelee3@outlook.com" className="underline">helenelee3@outlook.com</a></p>
       </form>
       
      
