@@ -1,24 +1,34 @@
 import React from 'react';
-
+import {resumeDataFE, resumeDataBE } from '../data/resume-data'
 export default function Resume() {
   return (
-    <div>
-      <h1>Resume Page</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
-    </div>
+    <main className="w-3/4 pt-20 m-auto flex flex-col justify-center">
+      <a href="https://drive.google.com/file/d/1VMWFiiijRbdrj_syCVhSilMFpDtUWZ_m/view?usp=share_link">Link to Full Resume <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" target="_blank" rel="noopener noreferrer"></path></svg></a>
+      <div className="flex flex-row justify-content">
+      <section className="p-10">
+        <p className="block">Front End Proficiencies</p>
+        <ul className="list-disc">
+          {resumeDataFE.map((item, index) => (
+            <li className="list-group-item" key={index}>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </section>
+      
+      <section className="p-10">
+          <p className="block">Back End Proficiencies</p>
+          <ul className="list-disc">
+            {resumeDataBE.map((item, index) => (
+              <li className="list-group-item" key={index}>
+                {item}
+              </li>
+            ))}
+          </ul>
+      </section>
+
+      </div>
+      
+    </main>
   );
 }
