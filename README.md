@@ -1,70 +1,102 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  # [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Available Scripts
+  # Helen Lee Portfolio
 
-In the project directory, you can run:
+  ## Table of Contents
+ - [Description](#description)
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - [License](#license)
+ - [Test Instructions](#test-instructions)
+ - [Credits](#credits)
+ - [Questions](#questions)
+  
+  ## Description
+  This is my portfolio which has been developed using React. It contains four sections, an About page, a Portfolio page linking to some of my recent projects, a Contact page for feedback and chat and lastly a Resume page listing my skills and links to my full Resume. The portfolio page contains links to the deployed applications where applicable and also links to the associated GitHub repositories.
 
-### `npm start`
+  The application was styled using Tailwind and uses some Google fonts. It includes some animations on the About page and the Contact page. Please submit your message to see the animations!
+  
+  The application is developed using the following technologies:
+  - Javascript
+  - React
+  - Tailwind
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  The main challenge in developing this application was getting the file structure correct and familiarisation with React. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+  ## Installation
+  Ensure node is installed. Test by running 
+  ```
+  node -v
+  ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  To install this package run:
+  ```
+  npm install
+  ```
+  To build this application run:
+  ```
+  npm run build
+  ```
 
-### `npm run build`
+  ## Usage
+  To run this application ensure you are in the main helen-lee-react-portfoio directory. 
+  
+  To start the server run:
+```
+npm start
+```
+You should see the server startup message:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Here is a screenshot showing the server started.](/src/assets/server-start.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once the server is running you can open your browser and enter:
+```
+http://localhost:3001/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+You will be presented with the Home Page:
+![Here is a screenshot showing the home page.](/src/assets/home-page.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Click on the navigation across the top of the screen to visit the various pages
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Portfolio Page:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Here is a screenshot showing the portfolio page.](/src/assets/portfolio.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contacts Page:
 
-## Learn More
+![Here is a screenshot showing the contacts page.](/src/assets/contact.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Resume Page:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Here is a screenshot showing the resume page.](/src/assets/resume.png)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To view the deployed application click on the link below:
 
-### Analyzing the Bundle Size
+[Helen Lee Portfolio](https://helenelee.github.io/helen-lee-react-portfolio/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+  ## License
+  This project is covered by the "The MIT License" license.
+  For more details click on the link below:
+  [License](https://opensource.org/licenses/MIT)
+  
+  
+  ## Test Instructions
+  The application can be tested by following the instructions above under the Usage section.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+  ## Credits
+  I would like to thank the instructors at UWA Bootcamp. 
+  
+  ## Questions
+ If you have any questions or feedback please contact me. My details are below. As this is a learning challenge for me I would appreciate any feedback, or ideas for improvement.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+ Github : https://github.com/HelenELee 
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ Email : helenelee3@outlook.com
+  
