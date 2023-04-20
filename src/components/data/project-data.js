@@ -1,3 +1,4 @@
+//import images for use in portfolio
 import pppImage from '../../assets/ppp_20.png';
 import cyberFImage from '../../assets/cyberfridge.png';
 import workdaySchedImage from '../../assets/work-day-schedular.png';
@@ -5,6 +6,7 @@ import notetakerImage from '../../assets/note-taker.png';
 import ecommerceImage from '../../assets/e-commerce.png';
 import techblogImage from '../../assets/tech-blog.png';
 
+//array of data for portfolio page
 export const projectData = [
     {
         id: "1",

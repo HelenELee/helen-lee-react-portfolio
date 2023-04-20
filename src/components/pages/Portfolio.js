@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from "../Project";
 import  {projectData} from '../data/project-data';
-
+//use project component to display each project
 export default function Portfolio() {
   return (
     

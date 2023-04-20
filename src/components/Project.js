@@ -1,6 +1,6 @@
 
 import React from 'react';
-;
+//Project component displays image, description, links to app and github
 
 export default function Project(props) {
     //const hasLink = (props.app === "" ? false : true);

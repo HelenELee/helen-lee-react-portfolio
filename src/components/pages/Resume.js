@@ -1,5 +1,6 @@
 import React from 'react';
 import {resumeDataFE, resumeDataBE } from '../data/resume-data'
+//link to full resume and skills
 export default function Resume() {
   return (
     <main className="w-3/4 pt-20 m-auto flex flex-col justify-center">

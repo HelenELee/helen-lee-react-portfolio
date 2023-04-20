@@ -5,7 +5,8 @@ import githubImage from '../assets/github_40.png';
 import linkedinImage from '../assets/linkedin.png';
 import twitterImage from '../assets/twitter.png';
 
-/*import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+/*Will use fontawesome next version
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 <FontAwesomeIcon icon={icon({name: 'twitter', style: 'brands'})} />
 <li className="inline-block"><a href="tel:+61400300200"><img src={phoneImage} alt="phone number"/></a></li>

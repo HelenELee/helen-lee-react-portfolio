@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 
-// Here we import a helper function that will check if the email is valid
+// Here we import a helper function that will check if the email is valid 
+//and confetti function to shower confetti when submit button is clicked
 import { validateEmail } from '../utils/helpers';
 import { addConfetti } from '../utils/confetti.js';
 
+//styles for the form fields - tailwind
 const inputStyle=`appearance-none rounded-none 
 relative w-3/4 px-3 py-2 border border-gray-300 
 placeholder-gray-500 text-gray-900 rounded 
@@ -21,7 +23,7 @@ rounded-md text-white bg-gray-300 focus:outline-none focus:ring-2 focus:ring-off
 focus:ring-red-500`;
 
 const messageStyle=inputStyle + ` h-24`;
-
+//style for error messages
 const errorMessage=`text-red-500`;
 
 function Form() {
@@ -30,12 +32,12 @@ function Form() {
   const [message, setMessage] = useState('');
 
   const handleInputChange = evt => {
-    //setName(evt.target.value);
-
+    
     const { target } = evt;
     const inputType = target.name;
     const inputValue = target.value;
 
+    //check input type and set correct state
     if (inputType === 'email') {
       setEmail(inputValue);
     } else if (inputType === 'userName') {
@@ -46,10 +48,10 @@ function Form() {
   }
 
   const handleSubmit = () => {
-    setSubmitClicked(true);
-    addConfetti();
+    setSubmitClicked(true); //can show apology message - submit not implemented yet
+    addConfetti(); //shower confetti
   }
-
+  //used for validation and showing error message
   const isValidName = name !== "";
   const isValidEmail = email !== "" && validateEmail(email);
   const isValidMessage = message !== "";
@@ -101,7 +103,7 @@ function Form() {
         /> 
         {enteredMessage ? (isValidMessage ? "" : <p className={errorMessage}>❌ Please enter your message.</p>) : null}
         <button type="button" disabled={!isValidButton} className={isValidButton ? buttonStyle : buttonStyleDisabled} onClick={handleSubmit}>Submit</button>
-        
+        {/*Show error message on submit*/}
         <p id="apologies" className={!submitClicked ? "hidden" : "apology"}>Apologies this part of my portfolio is not working yet! To contact me please email me at <a href="mailto:helenelee3@outlook.com" className="underline">helenelee3@outlook.com</a></p>
       </form>
       
