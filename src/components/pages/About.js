@@ -9,18 +9,11 @@ export default function About() {
         <img src={helenImage} alt="Helen Lee head shot" class="photo" />
       </aside>
       <section>
-          <h1>Hi, I'm Helen Lee</h1>
-          <p> I have been a Lotus Notes developer in am a full stack developer based in Perth Australia and have completed the UWA Full Stack Developer Bootcamp course. 
-            Please check out my work in the Portfolio section.</p>
-
-          <p>I have worked in the IT industry in different roles including developer, business analyst, project leader and 
-            support analyst, with Lotus Notes & Domino. </p>
-
-          <p>I thrive on producing great applications that exceed the clients requirements!</p>
-
-          <p>When not coding I love to excercise, read and hang out with family and friends.     </p>
-     
-
+          <h1 className="about-me">Hi, I'm Helen Lee</h1>
+          <p className="about-me"> I am a developer based in Perth, Australia. </p>
+          <p className="about-me"> I have been working in the IT industry for several year - coding, analysis, support, team lead...</p>
+          <p className="about-me"> I love the challenges of producing great applications that exceed the clients requirements!</p>
+          <p className="about-me">When not coding I love to excercise, read and hang out with family and friends.     </p>
       </section>
       
     </main>

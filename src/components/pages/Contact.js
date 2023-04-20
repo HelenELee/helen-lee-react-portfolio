@@ -20,6 +20,8 @@ my-5 py-2 px-4 border border-transparent text-sm font-medium
 rounded-md text-white bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2
 focus:ring-red-500`;
 
+const messageStyle=inputStyle + ` h-24`;
+
 const errorMessage=`text-red-500`;
 
 function Form() {
@@ -95,7 +97,7 @@ function Form() {
           type="text"
           placeholder="Enter your message"
           onBlur={() => setEnteredMessage(true)}
-          className={inputStyle}
+          className={messageStyle}
         /> 
         {enteredMessage ? (isValidMessage ? "" : <p className={errorMessage}>❌ Please enter your message.</p>) : null}
         <button type="button" disabled={!isValidButton} className={isValidButton ? buttonStyle : buttonStyleDisabled} onClick={handleSubmit}>Submit</button>
