@@ -3,7 +3,9 @@ import React from 'react';
 ;
 
 export default function Project(props) {
-    
+    //const hasLink = (props.app === "" ? false : true);
+   
+
     return (
         <section className="max-w-sm bg-white border border-yellow-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5">            
             
