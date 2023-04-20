@@ -53,7 +53,7 @@ You should see the server startup message:
 
 Once the server is running you can open your browser and enter:
 ```
-http://localhost:3001/
+http://localhost:3000/
 
 ```
 
