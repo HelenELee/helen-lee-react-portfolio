@@ -14,7 +14,7 @@ import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 function Footer() {
     return (
-        <footer className="footer flex flex-column justify-center"> 
+        <footer className="footer flex flex-column justify-center mt-15">
             <ul>
                 
                 <li className="inline-block"><a href="https://github.com/HelenELee"><img src={githubImage} alt="github" /></a></li>
