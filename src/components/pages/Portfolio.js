@@ -4,8 +4,12 @@ import  {projectData} from '../data/project-data';
 //use project component to display each project
 export default function Portfolio() {
   return (
-    
-    <main className="w-3/4 pt-20 m-auto flex flex-row justify-center flex-wrap">
+    <main className="w-3/4 pt-5 m-auto text-center">
+
+    <span className="text-center about-me text-xl">Below is a selection of my projects. Please check out my GitHub account to see more....</span>
+    <section className="w-3/4 m-auto flex flex-row justify-center flex-wrap">
+      
+      
       {
         projectData.map((proj) => {
           console.log(proj.title);
@@ -13,6 +17,7 @@ export default function Portfolio() {
         })
       }
       
+    </section>
     </main>
     
   );
