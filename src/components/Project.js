@@ -8,7 +8,7 @@ export default function Project(props) {
 
     return (
         // <section className="max-w-sm bg-white border border-yellow-200 rounded-lg shadow  m-5 hover:shadow-[0_35px_60px_-15px_rgba(51,53,51,1.0)] hover:shadow-inner">            
-        <section className="max-w-sm bg-white border border-yellow-200 rounded-lg m-5 hover:shadow-orange hover:shadow-inner">             
+        <section className="max-w-sm bg-white border border-yellow-200 rounded-lg m-5 shadow hover:shadow-2xl-gray-200 hover:shadow-inner">             
             <a href="{props.app}">
                 <img src={props.img} alt={props.title + " home page image"} className="rounded-t-lg m-auto mt-5" />           
             </a>
