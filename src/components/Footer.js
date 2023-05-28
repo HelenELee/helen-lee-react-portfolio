@@ -5,6 +5,7 @@ import githubImage from '../assets/github_40.png';
 import linkedinImage from '../assets/linkedin.png';
 import twitterImage from '../assets/twitter.png';
 
+
 /*Will use fontawesome next version
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
@@ -19,7 +20,7 @@ function Footer() {
                 
                 <li className="inline-block"><a href="https://github.com/HelenELee"><img src={githubImage} alt="github" /></a></li>
                 <li className="inline-block"><a href="https://www.linkedin.com/in/helen-e-lee/"><img src={linkedinImage} alt="linkedin" /></a></li>
-                <li className="inline-block"><a href="https://twitter.com/HLee59108793/"><img src={twitterImage} alt="twitter" /></a></li>
+                <li className="inline-block"><a href="https://twitter.com/HLee59108793/"><img src={twitterImage} alt="twitter" /></a></li> 
             </ul>
         </footer>
     )
