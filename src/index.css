@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url(https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Josefin+Sans:wght@600&family=Open+Sans:ital,wght@0,300;0,500;0,800;1,300;1,500;1,800&family=Rock+Salt&display=swap);
+@Import url(https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Condensed:wght@400;700&display=swap);
 
 :root {
   --red: #A62639;
@@ -49,25 +50,104 @@ code {
     monospace;
 }
 
+.hand-written {
+  font-family: 'Dancing Script';
+}
+
+.stext  {
+  -ms-transform: rotate(-10deg); /* IE 9 */
+  -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+  -moz-transform: rotate(-10deg); /*Mozilla */
+   transform: rotate(-10deg); 
+}
+
+.highlight {
+  color: #B80000;
+}
+
+@keyframes size-change {
+  0%   {font-size: 30px;}
+  25%  {font-size: 35px;}
+  50%  {font-size: 40px;}
+  100% {font-size: 30px;}
+}
+
+.size-animation {
+  /* width: 100px;
+  height: 100px;
+  background-color: red; */
+  animation-name: size-change;
+  animation-duration: 4s;
+}
+
+@keyframes colour-change {
+  0%   {color: #fdba74;}
+  25%  {color: #fb923c;}
+  50%  {color: #f97316;}
+  100% {color: #ea580c;}
+}
+
+.colour-animation {
+  /* width: 100px;
+  height: 100px;
+  background-color: red; */
+  animation-name: colour-change;
+  animation-duration: 4s;
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1,1) translateY(0); }
+  10%  { transform: scale(1.1,.9) translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-55px);}
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  58%  { transform: scale(1,1) translateY(-7px); }
+  65%  { transform: scale(1,1) translateY(0);}
+  100% { transform: scale(1,1) translateY(0);}
+}
+
+.bounce-animation {
+  animation: bounce 10s ease infinite;
+}
+
+
+@keyframes spinner {
+  /* from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  } */
+  
+  0%   { transform: rotateX(0deg); }
+  50%  { transform: rotateX(180deg); }
+  100% { transform: rotateX(360deg);}
+
+}
+
+.spinner {
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  transform-style: preserve-3d;
+  text-align:center;
+}
+
+
 .bg-dark {
   background:url("./assets/helen-beach-black-white-curl.jpg");
   height: 655px;
   width: 495px;
+  /* height: 50%; */
+  /* width: 30%; */
+  background-repeat: no-repeat
 }
 
 .hover\:bg-light:hover {
   background:url("./assets/helen-beach-colour-curl.jpg");
+  background-repeat: no-repeat
 }
 
-/*
-ul {
-  list-style-type: none;
-}
-
-li {
-  display: inline-block; 
-}
-*/
 .header-color {
   background-color: black;
 }
@@ -126,67 +206,34 @@ ul li {
   }
 }
 
-/*
-ul li:hover{
-  transform:scale(1.5);
-}*/
-
-/*
-button:hover{
-  transform:scale(1.5);
+@media only screen and (max-width: 600px) {
+  .bg-dark {
+    background:url("./assets/helen-beach-black-white-curl_25.jpg");
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    height: 163px;
+    width: 123px;
+  }
+  .bg-light {
+    background:url("./assets/helen-beach-colour-curl_25.jpg");
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    height: 163px;
+    width: 123px;
+  }
+  aside{
+    flex: 100%;
+  }
+  .main-container {
+    flex-direction: column;
+  }
+  .image-container {
+    flex: 100%;
+    background-color: #A62639;
+  }
+  .about-container {
+    flex: 100%;
+    width: 100%;
+    background-color: #fdba74;
+  }
 }
-*/
-
-/*
-ul li{
-  list-style:none;
-  margin:0 20px;
-  transition:0.5s;
-}
-
-ul li a{
-  display: block;
-  position:relative;
-  text-decoration:none;
-  padding:5px;
-  font-size:18px;
-  font-family: sans-serif;
-  color:#fff;
-  
-  transition:0.5s;
-}
-
-ul:hover li a{
-  transform:scale(1.5);
-}
-
-ul li a:hover{
-  transform:scale(1.5);
-  opacity:1;
-  filter:blur(0);
-  text-decoration:none;
-  color:#fff;
-}
-*/
-
-/*
-ul li a:before{
-  content:'';
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:#ff497c;
-  transition:0.5s;
-  transform-origin:right;
-  transform:scaleX(0);
-  z-index:-1;
-}
-
-ul li a:hover:before{
-  transition:transform 0.5s;
-  transform-origin:left;
-  transform:scaleX(1);
-}
-*/
