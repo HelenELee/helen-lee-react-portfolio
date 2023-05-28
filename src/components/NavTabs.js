@@ -6,7 +6,7 @@ function NavTabs({ currentPage, handlePageChange }) {
   return (
     <header className="header-color h-200 p-10 m-0 flex flex-row flex-end flex-nowrap items-end">
 
-    <p className="text-white about-me text-4xl">Helen Lee</p>
+    <p className="text-white about-me text-4xl pr-5"><a href="#about" onClick={() => handlePageChange('About')}>Helen Lee</a></p>
     <ul className="ml-auto list-none">
       <li className="mr-10 inline-block">
         <a
