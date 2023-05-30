@@ -7,14 +7,16 @@ import helenImage from "../../assets/helen-beach-black-white-curl.jpg";
 export default function About() {
   return (
     <main className="m-auto flex flex-row main-container">
-        <aside className="pr-10 bg-dark hover:bg-light">
+        <aside className="pr-10 bg-dark hover:bg-light min-h-full">
           {/* space for photo */}
+          
+          {/* <img src={helenImage} alt="helen head shot" classname="sm:block"></img> */}
         </aside>
       {/* <aside className="image-container"> */}
         {/* aside aside aside */}
         {/* <img src={helenImage} alt="helen head shot"></img> */}
       {/* </aside> */}
-      <section className="w-2/4 pt-20 pl-20 about-container">
+      <section className="w-2/4 pt-20 pl-20 about-container mr-5">
           <h1 className="about-me mb-5">Hi, I'm Helen Lee.</h1>
           <p className="about-me mb-5"> Welcome to my portfolio! </p>
           <p className="about-me mb-5"> I am a developer based in beautiful Perth, in Western Australia. 
