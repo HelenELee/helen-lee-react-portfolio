@@ -6,7 +6,7 @@ export default function Portfolio() {
   return (
     <main className="w-3/4 pt-5 m-auto text-center">
 
-    <span className="text-center about-me text-xl highlight text-4xl">Below is a selection of my projects. Please check out my <a href="https://github.com/HelenELee" className="hover:curser-grabbing hover:underline">GitHub</a> account to see more....</span>
+    <span className="text-center about-me highlight text-3xl">Below is a selection of my projects. <br></br>Please check out my <a href="https://github.com/HelenELee" className="hover:curser-grabbing hover:underline">GitHub</a> account to see more....</span>
     <section className="w-3/4 m-auto flex flex-row justify-center flex-wrap">
       
       
