@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/helen-lee-react-portfolio/static/css/main.b8fc1c27.css",
-    "main.js": "/helen-lee-react-portfolio/static/js/main.57413049.js",
+    "main.css": "/helen-lee-react-portfolio/static/css/main.8ad34ff3.css",
+    "main.js": "/helen-lee-react-portfolio/static/js/main.e3a0b2b3.js",
     "static/js/787.341254d5.chunk.js": "/helen-lee-react-portfolio/static/js/787.341254d5.chunk.js",
     "static/media/slainte.png": "/helen-lee-react-portfolio/static/media/slainte.3b560bf4a866ce7da15c.png",
     "static/media/helen-beach-colour-curl.jpg": "/helen-lee-react-portfolio/static/media/helen-beach-colour-curl.1f1cd39bc15c99f6c711.jpg",
@@ -13,12 +13,12 @@
     "static/media/e-commerce.png": "/helen-lee-react-portfolio/static/media/e-commerce.cc5ec3de421e550fcdda.png",
     "static/media/note-taker.png": "/helen-lee-react-portfolio/static/media/note-taker.269b0c26ecc0580e380d.png",
     "index.html": "/helen-lee-react-portfolio/index.html",
-    "main.b8fc1c27.css.map": "/helen-lee-react-portfolio/static/css/main.b8fc1c27.css.map",
-    "main.57413049.js.map": "/helen-lee-react-portfolio/static/js/main.57413049.js.map",
+    "main.8ad34ff3.css.map": "/helen-lee-react-portfolio/static/css/main.8ad34ff3.css.map",
+    "main.e3a0b2b3.js.map": "/helen-lee-react-portfolio/static/js/main.e3a0b2b3.js.map",
     "787.341254d5.chunk.js.map": "/helen-lee-react-portfolio/static/js/787.341254d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8fc1c27.css",
-    "static/js/main.57413049.js"
+    "static/css/main.8ad34ff3.css",
+    "static/js/main.e3a0b2b3.js"
   ]
 }
